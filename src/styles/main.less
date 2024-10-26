@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@primary-color: #4C1D95;  // Purple-900
+@secondary-color: #EDE9FE;  // Purple-100
+@text-color: #1F2937;  // Gray-800
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.button {
+  &-primary {
+    background-color: @primary-color;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: darken(@primary-color, 10%);
+    }
+  }
+}
+
+.header {
+  background-color: @primary-color;
+  color: white;
+  
+  nav {
+    .container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.main-content {
+  .container();
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
