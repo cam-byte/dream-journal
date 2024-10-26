@@ -4,7 +4,7 @@
     import { Book, Moon, Star, Calendar, TrendingUp, PlusCircle, LogOut } from 'lucide-svelte';
     import { goto } from '$app/navigation';
     import { redirect } from '@sveltejs/kit';
-    import type { PageLoad } from './$types';
+    import type { PageLoad } from './$types.js';
 
     export const load: PageLoad = async ({ parent }) => {
         const { session } = await parent();
