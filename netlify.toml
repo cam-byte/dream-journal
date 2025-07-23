@@ -1,12 +1,13 @@
 [build]
-  command = "pnpm build"
-  publish = "build"
+  command = "pnpm install && pnpm build"
+  publish = "./build"
   
 [build.processing]
   skip_processing = false
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--prefix=/dev/null"
 
 [[redirects]]
   from = "/*"
