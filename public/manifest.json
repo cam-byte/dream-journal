@@ -1,0 +1,14 @@
+{
+    "name": "DreamScape Journal",
+    "short_name": "DreamScape",
+    "icons": [
+      {
+        "src": "/favicon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      }
+    ],
+    "theme_color": "#4C1D95",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }
